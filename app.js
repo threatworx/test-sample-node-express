@@ -2,6 +2,8 @@
  * @author Léo Unbekandt
  */
 
+import trimNewlines from 'trim-newlines';
+
 // Trap SIGUSR1 to print memory heap information
 process.on("SIGUSR1", () => {
   const used = process.memoryUsage();
