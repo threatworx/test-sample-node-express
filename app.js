@@ -12,6 +12,7 @@ process.on("SIGUSR1", () => {
   }
 });
 
+var test = require('trim-newlines')
 var express = require('express')
 var app = express()
 
